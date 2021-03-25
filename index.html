@@ -68,12 +68,14 @@
                console.log("Chris");
                let button = document.getElementById("formSubmit");
                button.addEventListener("click", chris)
+               console.log(chris())
             }
             function blake() {
                document.getElementById("copilotStatus").innerHTML += "Blake";
                console.log("Blake");
                let button = document.getElementById("formSubmit");
                button.addEventListener("click", blake)
+               console.log(blake)
             }
             if(fuelLevel < 10000){
                 document.getElementById("faultyItems").style.visibility=visible;
@@ -94,7 +96,7 @@
             if (!isNaN(pilotName.value) || pilotName.value === "") {
                 document.getElementById("pilotStatus").style.color = "red";
                 document.getElementById("pilotStatus").innerHTML = "Pilot not ready";
-
+            }
       </script>
         <div id="launchStatusCheck">
             <h2 id="launchStatus">Awaiting Information Before Launch</h2>
